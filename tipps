@@ -1,0 +1,363 @@
+/* Ab hier habe ich den Code bearbeitet*/
+
+
+add_action( 'woocommerce_before_add_to_cart_button', 'cmka_additional_button' );
+function cmka_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Open Loose Tank" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="chartsize" href="https://1cnxn.com/wp-content/uploads/2017/12/Size-Chart-CN_964-1.jpg">SIZE CHART</a>';
+    }
+}
+
+add_action( 'woocommerce_before_add_to_cart_button', 'cmks_additional_button' );
+function cmks_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Jersey" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="chartsize" href="https://1cnxn.com/wp-content/uploads/2017/12/Size-Chart-CN_980.jpg">SIZE CHART</a>';
+    }
+}
+
+add_action( 'woocommerce_before_add_to_cart_button', 'cmkd_additional_button' );
+function cmkd_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Dye Tee" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="chartsize" href="https://1cnxn.com/wp-content/uploads/2017/12/Size-Chart-CN_1232.jpg">SIZE CHART</a>';
+    }
+}
+
+add_action( 'woocommerce_before_add_to_cart_button', 'cmkf_additional_button' );
+function cmkf_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Pleat Tee" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="chartsize" href="https://1cnxn.com/wp-content/uploads/2017/12/Size-Chart-CN_1563.jpg">SIZE CHART</a>';
+    }
+}
+
+add_action( 'woocommerce_before_add_to_cart_button', 'cmkg_additional_button' );
+function cmkg_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Ripped Pocket Tee" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="chartsize" href="https://1cnxn.com/wp-content/uploads/2017/12/Size-Chart-CN_1570.jpg">SIZE CHART</a>';
+    }
+}
+
+add_action( 'woocommerce_before_add_to_cart_button', 'cmkh_additional_button' );
+function cmkh_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Cropped Top" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="chartsize" href="https://1cnxn.com/wp-content/uploads/2017/12/Size-Chart-CN_1169.jpg">SIZE CHART</a>';
+    }
+}
+
+add_action( 'woocommerce_before_add_to_cart_button', 'cmkj_additional_button' );
+function cmkj_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Mesh Short Tee" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="chartsize" href="https://1cnxn.com/wp-content/uploads/2017/12/Size-Chart-CN_1185.jpg">SIZE CHART</a>';
+    }
+}
+
+add_action( 'woocommerce_before_add_to_cart_button', 'cmkk_additional_button' );
+function cmkk_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Side Slit Long Tee" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="chartsize" href="https://1cnxn.com/wp-content/uploads/2017/12/Size-Chart-CN_1188.jpg">SIZE CHART</a>';
+    }
+}
+
+add_action( 'woocommerce_before_add_to_cart_button', 'cmkl_additional_button' );
+function cmkl_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Cropped Tee" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="chartsize" href="https://1cnxn.com/wp-content/uploads/2017/12/Size-Chart-CN_1275.jpg">SIZE CHART</a>';
+    }
+}
+
+add_action( 'woocommerce_before_add_to_cart_button', 'cmkz_additional_button' );
+function cmkz_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Hilo" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="chartsize" href="https://1cnxn.com/wp-content/uploads/2017/12/Size-Chart-CN_1509.jpg">SIZE CHART</a>';
+    }
+}
+
+add_action( 'woocommerce_after_add_to_cart_button', 'cmky_additional_button' );
+function cmky_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Open Loose Tank" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '  <a id="vierartikel" href="#"></a>
+                <br>
+                <p>
+                <strong>Materialinformation:</strong><br>
+		100% cotton Slub Jersey
+		Reactive Dye 140 GSM
+		</p>';
+    }
+}
+
+add_action( 'woocommerce_after_add_to_cart_button', 'cmkx_additional_button' );
+function cmkx_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Jersey" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="vierartikel" href="#"></a>
+                <br><p><strong>Materialinformation:</strong><br>
+		130 GSM Micro Mesh 
+		100% Polyester
+		</p>';
+    }
+}
+
+add_action( 'woocommerce_after_add_to_cart_button', 'cmkc_additional_button' );
+function cmkc_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Dye Tee" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="vierartikel" href="#"></a>
+                <br>
+                <p>
+                <strong>Materialinformation:</strong><br>
+		100% cotton Slub Jersey 140 GSM
+		</p>';
+    }
+}
+
+add_action( 'woocommerce_after_add_to_cart_button', 'cmkv_additional_button' );
+function cmkv_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Pleat Tee" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="vierartikel" href="#"></a>
+                <br><p><strong>Materialinformation:</strong><br>
+		100% cotton 26/s ring spun cotton<br>
+		Reactive Mill Dye
+		Jersey 180 GSM
+		</p>';
+    }
+}
+
+add_action( 'woocommerce_after_add_to_cart_button', 'cmkb_additional_button' );
+function cmkb_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Ripped Pocket Tee" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="vierartikel" href="#"></a>
+                <br><p><strong>Materialinformation:</strong><br>
+		100% cotton 26/s ring spun cotton<br>
+		Reactive Mill Dye
+		Jersey 180 GSM
+		</p>';
+    }
+}
+
+add_action( 'woocommerce_after_add_to_cart_button', 'cmkn_additional_button' );
+function cmkn_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Cropped Top" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="vierartikel" href="#"></a>
+                <br><p><strong>Materialinformation:</strong><br>
+		85% Polyamid Stretch Jersey 260 GSM <br>
+		15% Elasthan Stretch Jersey 260 GSM
+		</p>';
+    }
+}
+ 
+add_action( 'woocommerce_after_add_to_cart_button', 'cmkm_additional_button' );
+function cmkm_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Mesh Short Tee" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="vierartikel" href="#"></a>
+                <br><p><strong>Materialinformation:</strong><br>
+		100% Polyester Micro Mesh 130 GSM
+		</p>';
+    }
+}
+
+add_action( 'woocommerce_after_add_to_cart_button', 'cmkq_additional_button' );
+function cmkq_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Side Slit Long Tee" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="vierartikel" href="#"></a>
+                <br><p><strong>Materialinformation:</strong><br>
+		100% Viskose Single Jersey 140 GSM
+		</p>';
+    }
+}
+
+add_action( 'woocommerce_after_add_to_cart_button', 'cmke_additional_button' );
+function cmke_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Cropped Tee" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="vierartikel" href="#"></a>
+                <br><p><strong>Materialinformation:</strong><br>
+		Spray Dye Slub Jersey 100% Cotton 140 gsm
+		</p>';
+    }
+}
+
+add_action( 'woocommerce_after_add_to_cart_button', 'cmkr_additional_button' );
+function cmkr_additional_button() {
+    global $product;
+
+    // Set HERE your product categories (IDs, slugs or Names)
+    $category = array( "Hilo" );
+
+    // Displaying button for single product pages and your defined product category
+    if( is_product() && has_term( $category, 'product_cat', $product->get_id() ) ){
+        echo '<a id="vierartikel" href="#"></a>
+                <br><p><strong>Materialinformation:</strong><br>
+		100% Viskose 32s<br>
+		Reactive Dye
+		Single Jersey 140 GSM
+		</p>';
+    }
+}
+
+add_action( 'woocommerce_single_product_summary', 'my_extra_button_on_product_page', 30 );
+function my_extra_button_on_product_page() {
+  global $product;
+  echo '<p>
+  <h3>Germany:</h3>
+  <strong>*Delivery Time: 5-8 Days</strong><br>
+  <h3>Other European Countries:</h3>
+  <strong>*Delivery Time: 8-10 Days </strong>
+  <br><br>
+  *Applies to deliveries within Europe. The delivery period begins with the receipt of payment, on workdays. 
+  </p>';
+}
+
+
+//Hier habe ich die Images geändert
+ 
+ // Add post thumbnail functionality
+add_theme_support('post-thumbnails');
+add_image_size('blog-large', 669, 272, true);
+add_image_size('blog-medium', 320, 202, true);
+add_image_size('tabs-img', 52, 50, true);
+add_image_size('related-img', 180, 138, true);
+add_image_size('portfolio-one', 540, 272, true);
+add_image_size('portfolio-two', 460, 295, true);
+add_image_size('portfolio-three', 300, 214, true);
+add_image_size('portfolio-four', 220, 161, true);
+add_image_size('portfolio-full', 940, 400, true);
+add_image_size('recent-posts', 700, 441, true);
+add_image_size('recent-works-thumbnail', 66, 66, true);
+
+
+add_action( 'woocommerce_after_shipping_calculator', 'shipping_calco');
+function shipping_calco () {
+  
+
+	if (is_cart()) {
+		
+		echo '<a id="shippingcal" href="https://www.google.de" target="blank">If your country is not listed, please contact us: <p style="font-weight:bold;">info@1cnxn.com</p></a>';
+	}
+
+
+
+
+
+
+	
+}
+
+
+
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+ 
+function custom_override_checkout_fields( $fields ) {
+unset($fields['billing']['billing_company']);
+ 
+return $fields;
+}
